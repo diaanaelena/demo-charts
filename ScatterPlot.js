@@ -104,7 +104,7 @@ const Plot = ({ scatteredData, lineData }) => {
       .attr("stroke", (d) => d3.rgb(colorScale(d.equity_type)).darker(2)) 
       .attr("stroke-width", 1.5)
       .attr("stroke-linejoin", "round") 
-      .style("cursor", "pointer") // Change cursor on hover to indicate interactivity
+      .style("cursor", "pointer") // Change cursor on hover
 
       .on("mouseover", handleMouseOver)
       .on("mouseout", handleMouseOut);
